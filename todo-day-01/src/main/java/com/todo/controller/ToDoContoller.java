@@ -1,5 +1,6 @@
 package com.todo.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.todo.entity.ToDo;
@@ -7,7 +8,6 @@ import com.todo.entity.ToDo;
 @RestController
 @RequestMapping("todo/")
 public class ToDoContoller {
-	
 	@GetMapping("/view")
 	public String getTodoList() {
 		return "List of todo items";
